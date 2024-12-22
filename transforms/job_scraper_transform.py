@@ -9,6 +9,9 @@ from typing import List
 from datetime import datetime
 import pandas as pd
 import time
+import csv
+import random
+
 
 logger = logging.getLogger(__name__)
 _total_jobs_scraped = 0  # Global counter for total jobs scraped
@@ -171,6 +174,7 @@ def normalize_spark_dataframe(df: DataFrame) -> DataFrame:
             "date_posted",
             trim(col("date_posted"))
         )
+
     
     # Ensure salary fields are numeric
     for col_name in ["salary_min", "salary_max"]:

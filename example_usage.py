@@ -30,8 +30,11 @@ search_terms_schema = StructType([
 cities_data = [
     ("Louisville", "KY"),
     ("Lexington", "KY"),
-    ("Bowling Green", "KY")
+    ("Bowling Green", "KY"),
+    ("Owensboro", "KY"),
+    ("Covington", "KY"),
 ]
+
 
 manufacturing_terms = [
     "Manufacturing Engineer",
